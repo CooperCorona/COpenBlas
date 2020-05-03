@@ -1,7 +1,9 @@
 module BlasWrapper [system] {
   header "/usr/include/aarch64-linux-gnu/cblas-openblas.h"
+  header "/usr/include/lapacke.h"
 
   link "openblas"
+  link "lapacke"
 
   export *
 }

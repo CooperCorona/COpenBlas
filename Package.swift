@@ -14,7 +14,8 @@ let package = Package(
             name: "Openblas",
             pkgConfig: "libopenblas-dev",
             providers: [
-                .apt(["libopenblas-dev"])
+                .apt(["libopenblas-dev"]),
+                .apt(["liblapack-dev"])
             ]
         )
     ]
