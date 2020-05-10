@@ -4,14 +4,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "BlasWrapper",
-    pkgConfig: "blaswrapper",
+    name: "COpenBlas",
     products: [
-        .library(name: "BlasWrapper", targets: ["BlasWrapper"])
+        .library(name: "COpenBlas", targets: ["COpenBlas"])
     ],
     targets: [
         .systemLibrary(
-            name: "Openblas",
+            name: "COpenBlas",
             pkgConfig: "libopenblas-dev",
             providers: [
                 .apt(["libopenblas-dev"]),
