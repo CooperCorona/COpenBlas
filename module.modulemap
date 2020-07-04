@@ -1,4 +1,4 @@
-module COpenBlas86 [system] {
+module COpenBlas [system] {
   header "/usr/include/x86_64-linux-gnu/cblas-openblas.h"
   header "/usr/include/lapacke.h"
 
